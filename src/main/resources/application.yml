@@ -1,0 +1,20 @@
+server:
+  port: 8088
+  tomcat:
+    accept-count: 2000
+    accesslog:
+      enabled: true
+      buffered: true
+      prefix: tomcat
+    connection-timeout: 30
+
+spring:
+  profiles:
+    active: test
+
+logging:
+  file:
+    path: F:/demo/demo.log
+    max-size: 20MB
+#  level:
+#    com.ftdc.
